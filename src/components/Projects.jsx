@@ -28,8 +28,8 @@ export default function Projects() {
             </a>
           </Reveal>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Reveal delay={80}>
+        <div className="grid md:grid-cols-2 gap-6 items-stretch">
+          <Reveal delay={80} className="h-full">
             <div className="glass-card p-5 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl flex flex-col h-full hover-lift border border-purple-500/25 hover:border-purple-500/60 shadow-[0_15px_40px_rgba(0,0,0,0.9)] hover:shadow-[0_20px_50px_rgba(168,85,247,0.3)] transition-all duration-300">
               <span className="material-symbols-outlined text-3xl sm:text-4xl text-primary mb-4 sm:mb-6 project-card-icon">shopping_cart</span>
               <h3 className="text-lg sm:text-xl font-bold font-headline mb-2 sm:mb-3 text-on-surface">Shop Cart — E-Commerce Web Application</h3>
@@ -47,7 +47,64 @@ export default function Projects() {
               </div>
             </div>
           </Reveal>
-          <Reveal delay={180}>
+          <Reveal delay={160} className="h-full">
+            <div className="glass-card p-5 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl flex flex-col h-full hover-lift border border-purple-500/25 hover:border-purple-500/60 shadow-[0_15px_40px_rgba(0,0,0,0.9)] hover:shadow-[0_20px_50px_rgba(168,85,247,0.3)] transition-all duration-300">
+              <div className="flex items-center justify-between mb-4 sm:mb-6">
+                <span className="material-symbols-outlined text-3xl sm:text-4xl text-secondary project-card-icon">shield</span>
+                <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-label">
+                  <a
+                    href="https://github.com/poojakp2003"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-secondary-fixed hover:text-on-surface transition-colors flex items-center gap-1 hover:underline"
+                  >
+                    <span>GitHub</span>
+                    <span className="material-symbols-outlined text-xs sm:text-sm">open_in_new</span>
+                  </a>
+                  <span className="text-purple-500/40">|</span>
+                  <a
+                    href="https://github.com/poojakp2003"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-secondary-fixed hover:text-on-surface transition-colors flex items-center gap-1 hover:underline"
+                  >
+                    <span>Live Demo</span>
+                    <span className="material-symbols-outlined text-xs sm:text-sm">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold font-headline mb-2 sm:mb-3 text-on-surface">Sentinel – AI Agent Trust & Governance Layer (IBM Bob 2.0 Hackathon)</h3>
+              <p className="text-xs sm:text-sm text-secondary-fixed font-label mb-3 sm:mb-4 leading-relaxed font-semibold">Python · FastAPI · React (Vite) · PostgreSQL · SQLAlchemy · Docker · SHA-256 · Neon DB · Vercel</p>
+              <ul className="text-sm sm:text-base text-on-surface-variant font-label space-y-2 list-disc list-inside mb-6 sm:mb-8">
+                <li>Collaborated in a two-person team to build a governance and audit layer for IBM Bob that monitors agent actions, scores risk through a rule-based policy engine, and halts high-risk steps until a human approves them.</li>
+                <li>Logs each event in a tamper-evident SHA-256 hash chain with tamper detection.</li>
+                <li>Implemented FastAPI services, a PostgreSQL schema, and a React dashboard featuring an approval queue, and jointly handled integration and testing.</li>
+              </ul>
+              <div className="mt-auto flex flex-wrap gap-1.5 sm:gap-2">
+                <span className="px-2.5 sm:px-3 py-1 bg-purple-500/15 border border-purple-500/40 rounded-full text-secondary-fixed text-xs font-label">Python</span>
+                <span className="px-2.5 sm:px-3 py-1 bg-surface-container-high/80 border border-purple-500/30 rounded-full text-on-surface-variant text-xs font-label">FastAPI</span>
+                <span className="px-2.5 sm:px-3 py-1 bg-surface-container-high/80 border border-purple-500/30 rounded-full text-on-surface-variant text-xs font-label">React</span>
+                <span className="px-2.5 sm:px-3 py-1 bg-surface-container-high/80 border border-purple-500/30 rounded-full text-on-surface-variant text-xs font-label">PostgreSQL</span>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={240} className="h-full">
+            <div className="glass-card p-5 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl flex flex-col h-full hover-lift border border-purple-500/25 hover:border-purple-500/60 shadow-[0_15px_40px_rgba(0,0,0,0.9)] hover:shadow-[0_20px_50px_rgba(168,85,247,0.3)] transition-all duration-300">
+              <span className="material-symbols-outlined text-3xl sm:text-4xl text-primary mb-4 sm:mb-6 project-card-icon">monitoring</span>
+              <h3 className="text-lg sm:text-xl font-bold font-headline mb-2 sm:mb-3 text-on-surface">Traceo</h3>
+              <p className="text-xs sm:text-sm text-primary-fixed font-label mb-3 sm:mb-4 leading-relaxed font-semibold">Python · React · FastAPI · PostgreSQL · Desktop Agent · Chrome Extension</p>
+              <ul className="text-sm sm:text-base text-on-surface-variant font-label space-y-2 list-disc list-inside mb-6 sm:mb-8">
+                <li>Developed a full-stack productivity tracking system using React, FastAPI, PostgreSQL, a Python Desktop Agent, and a Chrome Extension.</li>
+                <li>Tracks application, browser, and YouTube activity.</li>
+              </ul>
+              <div className="mt-auto flex flex-wrap gap-1.5 sm:gap-2">
+                <span className="px-2.5 sm:px-3 py-1 bg-purple-500/15 border border-purple-500/40 rounded-full text-primary-fixed text-xs font-label">Full-Stack</span>
+                <span className="px-2.5 sm:px-3 py-1 bg-surface-container-high/80 border border-purple-500/30 rounded-full text-on-surface-variant text-xs font-label">FastAPI</span>
+                <span className="px-2.5 sm:px-3 py-1 bg-surface-container-high/80 border border-purple-500/30 rounded-full text-on-surface-variant text-xs font-label">Chrome Extension</span>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={320} className="h-full">
             <div className="glass-card p-5 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl flex flex-col h-full hover-lift border border-purple-500/25 hover:border-purple-500/60 shadow-[0_15px_40px_rgba(0,0,0,0.9)] hover:shadow-[0_20px_50px_rgba(168,85,247,0.3)] transition-all duration-300">
               <span className="material-symbols-outlined text-3xl sm:text-4xl text-secondary mb-4 sm:mb-6 project-card-icon">how_to_vote</span>
               <h3 className="text-lg sm:text-xl font-bold font-headline mb-2 sm:mb-3 text-on-surface">Online Voting System Using Face Recognition</h3>
