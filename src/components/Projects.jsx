@@ -49,30 +49,7 @@ export default function Projects() {
           </Reveal>
           <Reveal delay={160} className="h-full">
             <div className="glass-card p-5 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl flex flex-col h-full hover-lift border border-purple-500/25 hover:border-purple-500/60 shadow-[0_15px_40px_rgba(0,0,0,0.9)] hover:shadow-[0_20px_50px_rgba(168,85,247,0.3)] transition-all duration-300">
-              <div className="flex items-center justify-between mb-4 sm:mb-6">
-                <span className="material-symbols-outlined text-3xl sm:text-4xl text-secondary project-card-icon">shield</span>
-                <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-label">
-                  <a
-                    href="https://github.com/poojakp2003"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-secondary-fixed hover:text-on-surface transition-colors flex items-center gap-1 hover:underline"
-                  >
-                    <span>GitHub</span>
-                    <span className="material-symbols-outlined text-xs sm:text-sm">open_in_new</span>
-                  </a>
-                  <span className="text-purple-500/40">|</span>
-                  <a
-                    href="https://github.com/poojakp2003"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-secondary-fixed hover:text-on-surface transition-colors flex items-center gap-1 hover:underline"
-                  >
-                    <span>Live Demo</span>
-                    <span className="material-symbols-outlined text-xs sm:text-sm">open_in_new</span>
-                  </a>
-                </div>
-              </div>
+              <span className="material-symbols-outlined text-3xl sm:text-4xl text-secondary mb-4 sm:mb-6 project-card-icon">shield</span>
               <h3 className="text-lg sm:text-xl font-bold font-headline mb-2 sm:mb-3 text-on-surface">Sentinel – AI Agent Trust & Governance Layer (IBM Bob 2.0 Hackathon)</h3>
               <p className="text-xs sm:text-sm text-secondary-fixed font-label mb-3 sm:mb-4 leading-relaxed font-semibold">Python · FastAPI · React (Vite) · PostgreSQL · SQLAlchemy · Docker · SHA-256 · Neon DB · Vercel</p>
               <ul className="text-sm sm:text-base text-on-surface-variant font-label space-y-2 list-disc list-inside mb-6 sm:mb-8">
